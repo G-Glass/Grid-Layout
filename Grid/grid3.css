@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body {
+    background-color: rgba(153, 153, 71, 0.678);
+}
+div.conteiner {
+    border: 2px solid blue;
+    padding: 10px;
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, auto);
+    gap: 7px;
+}
+/*div.item {
+    border: 2px solid;
+    height: 100px;
+    width: 100px;
+}*/
+div.caixa1 {
+    background-color: red;
+    border: 2px solid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 5;
+    grid-column-start: 1;
+}
+div.caixa2 {
+    background-color: black;
+    border: 2px solid ;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+div.caixa3 {
+    background-color: brown;
+    border: 2px solid;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
